@@ -1,0 +1,56 @@
+﻿@model IEnumerable<UserApp.Models.user>
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ViewAllUsers</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "UserRegister")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.userName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Password)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.userName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "EditUser", new { id=item.userId }) |
+                @Html.ActionLink("Details", "ViewUser", new { id=item.userId }) |
+                @Html.ActionLink("Delete", "DeleteUser", new { id=item.userId })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

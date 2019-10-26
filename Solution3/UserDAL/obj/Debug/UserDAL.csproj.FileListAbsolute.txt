@@ -1,0 +1,12 @@
+C:\Users\user\source\repos\Solution3\UserDAL\bin\Debug\UserDAL.dll.config
+C:\Users\user\source\repos\Solution3\UserDAL\bin\Debug\UserDAL.dll
+C:\Users\user\source\repos\Solution3\UserDAL\bin\Debug\UserDAL.pdb
+C:\Users\user\source\repos\Solution3\UserDAL\bin\Debug\EntityFramework.dll
+C:\Users\user\source\repos\Solution3\UserDAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\source\repos\Solution3\UserDAL\bin\Debug\EntityFramework.xml
+C:\Users\user\source\repos\Solution3\UserDAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\source\repos\Solution3\UserDAL\obj\Debug\UserDAL.csprojAssemblyReference.cache
+C:\Users\user\source\repos\Solution3\UserDAL\obj\Debug\UserDAL.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Solution3\UserDAL\obj\Debug\UserDAL.csproj.CopyComplete
+C:\Users\user\source\repos\Solution3\UserDAL\obj\Debug\UserDAL.dll
+C:\Users\user\source\repos\Solution3\UserDAL\obj\Debug\UserDAL.pdb

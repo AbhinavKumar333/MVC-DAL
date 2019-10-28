@@ -26,5 +26,9 @@ namespace UserDAL
         }
     
         public virtual DbSet<user> users { get; set; }
+        public virtual DbSet<cart> carts { get; set; }
+        public virtual DbSet<product> products { get; set; }
+
+        //public System.Data.Entity.DbSet<UserAPI.Models.Product> Products { get; set; }
     }
 }

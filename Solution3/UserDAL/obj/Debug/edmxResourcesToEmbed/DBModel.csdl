@@ -12,5 +12,42 @@
   </EntityType>
   <EntityContainer Name="SampleDBEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="users" EntityType="Self.user" />
+    <EntitySet Name="carts" EntityType="SampleDBModel.cart" />
+    <EntitySet Name="products" EntityType="SampleDBModel.product" />
+    <AssociationSet Name="FK__cart__productId__4BAC3F29" Association="SampleDBModel.FK__cart__productId__4BAC3F29">
+      <End Role="product" EntitySet="products" />
+      <End Role="cart" EntitySet="carts" />
+    </AssociationSet>
   </EntityContainer>
+  <EntityType Name="cart">
+    <Key>
+      <PropertyRef Name="cartId" />
+    </Key>
+    <Property Name="cartId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="productId" Type="Int32" />
+    <NavigationProperty Name="product" Relationship="SampleDBModel.FK__cart__productId__4BAC3F29" FromRole="cart" ToRole="product" />
+  </EntityType>
+  <EntityType Name="product">
+    <Key>
+      <PropertyRef Name="productId" />
+    </Key>
+    <Property Name="productId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="productname" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="productType" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="productPrice" Type="Int32" />
+    <Property Name="productDescription" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="carts" Relationship="SampleDBModel.FK__cart__productId__4BAC3F29" FromRole="product" ToRole="cart" />
+  </EntityType>
+  <Association Name="FK__cart__productId__4BAC3F29">
+    <End Type="SampleDBModel.product" Role="product" Multiplicity="0..1" />
+    <End Type="SampleDBModel.cart" Role="cart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="product">
+        <PropertyRef Name="productId" />
+      </Principal>
+      <Dependent Role="cart">
+        <PropertyRef Name="productId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserDAL", "UserDAL\UserDAL.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserApp", "UserApp\UserApp.csproj", "{1581C377-5C4A-4CD7-B048-6EA35E2C90F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserAPI", "UserAPI\UserAPI.csproj", "{A5C23D32-D01B-4AB2-A556-89E40BC3E220}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1581C377-5C4A-4CD7-B048-6EA35E2C90F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1581C377-5C4A-4CD7-B048-6EA35E2C90F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1581C377-5C4A-4CD7-B048-6EA35E2C90F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5C23D32-D01B-4AB2-A556-89E40BC3E220}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5C23D32-D01B-4AB2-A556-89E40BC3E220}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5C23D32-D01B-4AB2-A556-89E40BC3E220}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5C23D32-D01B-4AB2-A556-89E40BC3E220}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

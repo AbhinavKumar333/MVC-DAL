@@ -54,5 +54,9 @@ namespace UserDAL
             if (result.Count > 0){  return true; }
             else { return false; }
         }
+        public List<product> GetAllProducts()
+        {
+            return db.products.ToList();
+        }
     }
 }
